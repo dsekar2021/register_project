@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OWLS</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ STATIC_URL}}vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- MetisMenu CSS -->
+    <link href="{{ STATIC_URL}}vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="{{ STATIC_URL}}vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="{{ STATIC_URL}}vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ STATIC_URL}}dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{{ STATIC_URL}}vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+
+    <link href="{{ STATIC_URL}}vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+
+
+<style type="text/css">
+            .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+            background-color: #EBF4FA   ;
+        }
+        .table-hover thead tr {
+
+            background:#EBF4FA;
+        }
+
+</style>
+</head>
+
+<body>
+
+
+
+    <div id="wrapper">
+
+
+        <div id="page-wrapper">
+            {% block pagewrapper %}{% endblock %}
+        </div>
+        <!-- /#page-wrapper -->
+
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Maintained by <a href="mailto:group12_tech_2021@gmail.com">OWLS</a></span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="{{ STATIC_URL}}vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ STATIC_URL}}vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="{{ STATIC_URL}}vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="{{ STATIC_URL}}vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="{{ STATIC_URL}}vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="{{ STATIC_URL}}vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ STATIC_URL}}dist/js/sb-admin-2.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    {% block tablessearch %}{% endblock %}
+
+</body>
+
+</html>
